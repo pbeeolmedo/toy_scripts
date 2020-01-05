@@ -1,7 +1,8 @@
-# order a list of 3 integers in ascending order 
-
 def asc_order(input_list = None):
-    if input_list is None:
+    '''
+    Order a list of 3 integers in ascending order.
+    '''
+    if (input_list is None) or len(input_list) != 3:
         return None
 
     a,b,c= input_list
@@ -19,6 +20,5 @@ def asc_order(input_list = None):
     return ordered_list
 
 
-sample_list = [50,20,0]
-
+sample_list = [50,'2',0]
 print(asc_order(sample_list))
